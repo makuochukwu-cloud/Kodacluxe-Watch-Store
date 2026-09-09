@@ -4,7 +4,7 @@
   height: 40vh;
   background-image:
     linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
-    url(../assets/Home.Images/pexels-oguz-inan-163885042-10949319.jpg);
+    url(../assets/Home.Images/pexels-oguz-inan-163885042-10949319\ \(1\).jpg);
   background-repeat: none;
   background-size: cover;
 }
@@ -117,7 +117,7 @@
 .card2 {
   width: 50%;
   min-height: 400px;
-  background-image: url(../assets/Home.Images/pexels-leo-gilmant-1144880343-27579379.jpg);
+  background-image: url(../assets/Home.Images/pexels-leo-gilmant-1144880343-27579379\ \(1\).jpg);
   background-size: cover;
   background-position: center;
 }
