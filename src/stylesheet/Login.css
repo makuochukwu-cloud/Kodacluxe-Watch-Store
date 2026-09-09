@@ -1,0 +1,192 @@
+.login-body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  color: #111;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 3rem 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+  margin-bottom: 1rem;
+}
+
+.login-intro {
+  color: #777;
+  font-size: 1rem;
+  max-width: 420px;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+/* Login / Signup tabs */
+
+.login-signup-btn {
+  width: 100%;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.login-btn,
+.signup-btn {
+  width: 50%;
+  border-bottom: 1px solid #ccc;
+}
+
+.login-btn button,
+.signup-btn button {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 1rem;
+
+  font-size: 1rem;
+  cursor: pointer;
+  color: #111;
+}
+
+.login-btn.active,
+.signup-btn.active {
+  border-bottom: 2px solid #111;
+}
+
+/* Forms */
+
+.login-container,
+.signup-container {
+  width: 100%;
+}
+
+.login-container form,
+.signup-container form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login-container input,
+.signup-container input,
+.signup-container select {
+  width: 100%;
+
+  border: none;
+  border-bottom: 1px solid #333;
+
+  padding: 1rem 0;
+
+  background: transparent;
+  outline: none;
+
+  font-size: 0.9rem;
+  color: #111;
+}
+
+.login-container input::placeholder,
+.signup-container input::placeholder {
+  color: #777;
+}
+
+/* Login / Create Account buttons */
+
+.login-container form > button,
+.signup-container form > button {
+  width: 100%;
+
+  border: none;
+  border-radius: 30px;
+
+  padding: 1rem;
+
+  background-color: #000;
+  color: #fff;
+
+  font-weight: 600;
+  cursor: pointer;
+
+  margin-top: 0.5rem;
+}
+
+.login-container form > button:hover,
+.signup-container form > button:hover {
+  opacity: 0.85;
+}
+
+/* Forgot password */
+
+.login-container > a {
+  display: block;
+
+  margin-top: 1.5rem;
+
+  color: #555;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.login-container > a:hover {
+  text-decoration: underline;
+}
+
+/* Agreement */
+
+.agree-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  text-align: left;
+}
+
+.agree-checkbox input {
+  width: 18px;
+  height: 18px;
+
+  flex-shrink: 0;
+
+  margin-top: 3px;
+}
+
+.agree-checkbox p {
+  margin: 0;
+
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: #777;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .login-body {
+    padding: 2rem 1.2rem;
+  }
+
+  .container h2 {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+  }
+
+  .login-intro {
+    font-size: 0.9rem;
+  }
+}

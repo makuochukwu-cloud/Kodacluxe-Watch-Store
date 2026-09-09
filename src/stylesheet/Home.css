@@ -1,0 +1,291 @@
+/* hero styling starts here */
+.home-hero {
+  min-height: 80vh;
+
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url("../assets/Home.Images/bryan-angelo-UpPxP5eBxoQ-unsplash\ \(1\).png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .hero-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    font-size: 1rem;
+    color: var(--gold);
+  }
+
+  .hero-sub-title {
+    font-family: "Inter", sans-serif;
+    font-size: 2.3rem;
+    font-weight: 600;
+  }
+
+  .hero-button {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+
+    .hero-btn {
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      background-color: transparent;
+      border: 1px solid var(--gold-dark);
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    :hover {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(5px);
+      transition: all 0.3s ease;
+      font-weight: 600;
+    }
+  }
+}
+/* hero styling ends here */
+
+/* hero media query starts here */
+
+@media (max-width: 767px) {
+  .home-hero {
+    min-height: 100vh;
+  }
+
+  .hero-contents {
+    text-align: center;
+
+    .hero-title {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.5rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-button {
+      .hero-btn {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}
+
+/* hero media query ends here */
+
+/* men or women section */
+.gender-section {
+  display: flex;
+}
+
+.menswatch,
+.womenswatch {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 2rem 1rem;
+  width: 50%;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* opacity: 0; */
+  transform: translateY(40px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+/* .menswatch.show,
+.womenswatch.show {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+.menswatch {
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url(../assets/Home.Images/pexels-janamthapa-5350692.jpg);
+}
+.womenswatch {
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url(../assets/Home.Images/women1.jpg);
+}
+
+.gender-text {
+  color: white;
+
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: var(--gold-dark);
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 767px) {
+  .gender-section {
+    flex-direction: column;
+  }
+
+  .menswatch,
+  .womenswatch {
+    width: 100%;
+  }
+}
+
+/* Scroll reveal animation */
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px) scale(0.98);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.scroll-reveal.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* why-choose-us section */
+
+.why-choose-us {
+  margin-bottom: 4rem;
+
+  .why-choose-heading {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+  }
+  .cards-wrapper {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    border: 1px solid var(--border-light);
+    padding: 1rem;
+    border-radius: 2rem;
+
+    img {
+      color: var(--gold-dark);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .why-choose-us {
+    .why-choose-heading {
+      font-size: 14px;
+      letter-spacing: 5px;
+    }
+    .cards-wrapper {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+
+    .cards {
+      flex: 0 0 80%;
+      scroll-snap-align: start;
+    }
+  }
+}
+
+/* about section */
+.about-preview {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  min-height: 430px;
+  padding: 1rem;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url(../assets/Home.Images/pexels-gjorgji-mitrev-162410-5943780.jpg);
+  background-size: cover;
+  background-position: center;
+
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    black 15px,
+    black calc(90% - 15px),
+    transparent 100%
+  );
+}
+
+.preview-texts h4 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--gold-dark);
+}
+
+.preview-texts p {
+  width: 70%;
+  max-width: 500px;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.preview-btn {
+  margin-top: 2rem;
+}
+.learn-more {
+  width: fit-content;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 1px solid var(--gold-dark);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.learn-more:hover {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+  font-weight: 600;
+}

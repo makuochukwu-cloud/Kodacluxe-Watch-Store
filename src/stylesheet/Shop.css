@@ -1,0 +1,263 @@
+/* shop Hero */
+
+.shop-hero {
+  height: 20vh;
+  background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(../assets/Images\ for\ shop/pexels-ninetysevenyears-30372909.jpg);
+  background-size: cover;
+  background-position: center 27%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+  h2 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--gold-dark);
+  }
+}
+
+@media (max-width: 1024px) {
+  .shop-hero {
+    h2 {
+      font-size: 2rem;
+      letter-spacing: 10px;
+      line-height: 0.9;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--gold-dark);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .shop-hero {
+    h2 {
+      font-size: 18px;
+      letter-spacing: 8px;
+      line-height: 0.9;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--gold-dark);
+    }
+  }
+}
+/* Side Bar of the shop */
+
+.shop-contents {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+aside {
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+
+  &.active {
+    width: 220px;
+    opacity: 1;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  .categories {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    margin-bottom: 2rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+      padding-block: 1rem;
+      padding-inline: 8px;
+    }
+
+    a:hover {
+      background-color: var(--surface-hover);
+      padding-block: 1rem;
+      padding-inline: 8px;
+    }
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  aside {
+    &.active {
+      width: 180px;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+
+    .categories {
+      a {
+        text-decoration: none;
+        color: white;
+        padding-block: 1rem;
+        padding-inline: 5px;
+      }
+
+      a:hover {
+        background-color: var(--surface-hover);
+        padding-block: 1rem;
+        padding-inline: 5px;
+      }
+    }
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+  aside {
+    width: 0;
+
+    &.active {
+      width: 150px;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+
+    .categories {
+      a {
+        text-decoration: none;
+        color: white;
+        padding-block: 1rem;
+        padding-inline: 5px;
+      }
+
+      a:hover {
+        background-color: var(--surface-hover);
+        padding-block: 1rem;
+        padding-inline: 5px;
+      }
+    }
+  }
+}
+
+/* Products Section */
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: var(--gold-dark);
+  border: none;
+  font-size: 1rem;
+}
+
+.filter-btn img {
+  width: 28px;
+  height: 28px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.product-grid-cards {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1rem;
+
+  .product-images {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .product-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 30%;
+    margin-top: 1.5rem;
+
+    h3 {
+      font-weight: 400;
+      letter-spacing: 5px;
+      color: var(--gold-dark);
+    }
+
+    p {
+      font-size: smaller;
+      color: var(--text-secondary);
+    }
+
+    button {
+      padding: 5px;
+      border: 1px solid var(--border-light);
+      background-color: black;
+      color: var(--gold-dark);
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

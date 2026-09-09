@@ -1,0 +1,73 @@
+
+ const products = [
+    {
+      id: 1,
+      name: "Tissot PRX",
+      category: "Men",
+      price: 100,
+      image: watch1,
+    },
+    {
+      id: 2,
+      name: "Tissot PRX",
+      category: "Men",
+      price: 100,
+      image: watch2,
+    },
+    {
+      id: 3,
+      name: "Tissot PRX",
+      category: "Women",
+      price: 100,
+      image: watch3,
+    },
+    {
+      id: 4,
+      name: "Tissot PRX",
+      category: "Women",
+      price: 100,
+      image: watch4,
+    },
+    {
+      id: 5,
+      name: "Tissot PRX",
+      category: "Women",
+      price: 100,
+      image: watch5,
+    },
+    {
+      id: 6,
+      name: "Tissot",
+      category: "Women",
+      price: 100,
+      image: watch6,
+    },
+    {
+      id: 7,
+      name: "Tissot Classsic Dream",
+      category: "Men",
+      price: 100,
+      image: watch7,
+    },
+    {
+      id: 8,
+      name: "Tissot GentleMan",
+      category: "Men",
+      price: 100,
+      image: watch8,
+    },
+    {
+      id: 9,
+      name: "Tissot Seastar",
+      category: "Men",
+      price: 100,
+      image: watch9,
+    },
+    {
+      id: 10,
+      name: "Tissot T-Race",
+      category: "Men",
+      price: 100,
+      image: watch10,
+    },
+  ];

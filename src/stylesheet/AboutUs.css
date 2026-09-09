@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.about-hero {
+  height: 40vh;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url(../assets/Home.Images/pexels-oguz-inan-163885042-10949319.jpg);
+  background-repeat: none;
+  background-size: cover;
+}
+
+.about-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  padding: 3rem;
+
+  h4 {
+    color: var(--gold-dark);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 60px;
+    letter-spacing: 1rem;
+    font-weight: 400;
+  }
+
+  p {
+    color: var(--gold-dark);
+    font-weight: 600;
+  }
+}
+/* about hero styling */
+@media (max-width: 767px) {
+  .about-hero {
+    height: 30vh;
+  }
+
+  .about-texts {
+    width: 70%;
+    padding: 2rem;
+
+    h2 {
+      font-size: 2rem;
+      letter-spacing: 0.5rem;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .about-texts {
+    width: 70%;
+    padding: 2rem;
+
+    h2 {
+      font-size: 1rem;
+      letter-spacing: 0.5rem;
+      font-weight: 400;
+    }
+
+    p {
+      color: var(--gold-dark);
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+}
+
+/* OUR STORY */
+
+.our-story {
+  display: flex;
+  min-height: 300px;
+  color: black;
+  background-color: white;
+}
+
+.card1 {
+  width: 50%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card1 h4 {
+  color: var(--gold-dark);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.card1 h2 {
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  line-height: 1.15;
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  max-width: 650px;
+}
+
+.card1 p {
+  max-width: 600px;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.card2 {
+  width: 50%;
+  min-height: 400px;
+  background-image: url(../assets/Home.Images/pexels-leo-gilmant-1144880343-27579379.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* SIGNATURE */
+
+.signatory {
+  margin-top: 1rem;
+}
+
+.signatory .sign {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--gold-dark);
+  margin-bottom: 0.3rem;
+}
+
+.signatory h5 {
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+/* OUR VALUES */
+
+.Our-values {
+  background-color: #0a0a0a;
+  color: white;
+  padding: 2rem 6%;
+}
+
+.values-header {
+  font-size: clamp(2rem, 3vw, 2rem);
+  letter-spacing: 6px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white !important;
+}
+
+/* =========================
+   VALUE CARDS
+========================= */
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  color: white;
+  border-top: 1px solid #292929;
+  border-bottom: 1px solid #292929;
+}
+
+.cards {
+  position: relative;
+  padding: 2rem 1rem;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-right: 1px solid #292929;
+}
+
+.cards:last-child {
+  border-right: none;
+}
+
+.cards h2 {
+  color: var(--gold-dark);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.cards p {
+  color: #999;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  max-width: 230px;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .our-story {
+    flex-direction: column;
+    min-height: auto;
+    margin-bottom: 0rem;
+  }
+
+  .card1 {
+    width: 100%;
+    padding: 2rem 2rem;
+  }
+
+  .card1 h4 {
+    margin-bottom: 1.2rem;
+  }
+
+  .card1 h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+  }
+
+  .card1 p {
+    font-size: 0.9rem;
+  }
+
+  .card2 {
+    display: none;
+  }
+
+  /* VALUES */
+
+  .values-header {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .card-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cards {
+    min-height: 150px;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #292929;
+  }
+
+  .cards:nth-child(2) {
+    border-right: none;
+  }
+
+  .cards:nth-child(3),
+  .cards:nth-child(4) {
+    border-bottom: none;
+  }
+
+  .cards:nth-child(3) {
+    border-right: 1px solid #292929;
+  }
+}
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+  .card1 {
+    padding: 3rem 1.3rem;
+  }
+
+  .card1 h4 {
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+  }
+
+  .card1 h2 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .card1 p {
+    font-size: 0.8rem;
+    line-height: 1.7;
+  }
+
+  .card2 {
+    min-height: 320px;
+  }
+
+  .Our-values {
+    padding: 4rem 1rem;
+  }
+
+  .values-header {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  .card-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    border-right: none !important;
+    border-bottom: 1px solid #292929 !important;
+  }
+
+  .cards:last-child {
+    border-bottom: none !important;
+  }
+
+  .cards h2 {
+    font-size: 1rem;
+  }
+
+  .cards p {
+    font-size: 0.78rem;
+  }
+
+  .signatory .sign {
+    font-size: 2rem;
+  }
+}
